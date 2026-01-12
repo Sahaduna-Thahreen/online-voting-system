@@ -114,6 +114,26 @@ Follow the steps below to run the **Online Voting System** on your local machine
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 🖼️ Screenshots
+
+Here’s a quick look at the Online Voting System:
+
+### Home Page
+![Home Page](output/Home.png)
+
+### Voting Page
+![Voting Page](output/Voting.png)
+
+### Admin Panel
+![Admin Panel](output/Admin.png)
+
+### Admin Panel Details
+![Admin Page](output/Admin-page.png)
+
+### Candidate Nomination
+![Candidate Nomination](output/Candidates.png)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 🔐 Admin Login (Demo)
 
