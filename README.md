@@ -69,25 +69,49 @@ online-voting-system/
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## ⚙️ How to Run the Project (Local Setup)
+## ▶️ How to Run the Project (Local Setup)
 
-1.  Install **XAMPP**
+Follow the steps below to run the **Online Voting System** on your local machine.
 
-2.  Start **Apache** and **MySQL** services
+1. **Install XAMPP**
+   - Download and install XAMPP from  
+     https://www.apachefriends.org
 
-3.  Create a MySQL database named:
+2. **Start Required Services**
+   - Open XAMPP Control Panel
+   - Start **Apache**
+   - Start **MySQL**
 
-        db_evoting
+3. **Create Database**
+   - Open your browser and go to:
+     ```
+     http://localhost/phpmyadmin
+     ```
+   - Create a new database named:
+     ```
+     db_evoting
+     ```
+   - Import the required tables into the database (SQL file)
 
-4.  Import the required tables into the database
+4. **Setup Project Folder**
+   - Copy the project folder into:
+     ```
+     C:\xampp\htdocs\
+     ```
 
-5.  Copy the project folder to:
+5. **Run the Application**
+   - Open a browser and visit:
+     ```
+     http://localhost/online-voting-system/
+     ```
 
-        C:\xampp\htdocs\
+---
 
-6.  Open a browser and go to:
+### ✅ Notes
+- Make sure Apache and MySQL are running before accessing the project
+- Database credentials can be configured inside PHP files if needed
+- This project is intended for academic and demonstration purposes
 
-        http://localhost/online-voting-system/
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
