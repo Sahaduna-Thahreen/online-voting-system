@@ -128,7 +128,7 @@ Here’s a quick look at the Online Voting System:
 ![Admin Panel](output/Admin.png)
 
 ### Admin Panel Details
-![Admin Page](output/Admin-page.png)
+![Admin Page](output/Admin-panel.png)
 
 ### Candidate Nomination
 ![Candidate Nomination](output/Candidates.png)
