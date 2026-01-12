@@ -1,14 +1,14 @@
 # 🗳️ Online Voting System
 
 A secure, user-friendly **Online Voting System** developed using **PHP and MySQL**, designed to digitize the voting process with accuracy, transparency, and efficiency.
-\This project is built as an **academic and demonstration system**,showcasing full-stack web development skills.
+This project is built as an **academic and demonstration system**,showcasing full-stack web development skills.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 📌 Project Overview
 
 The Online Voting System allows voters to cast their votes electronically while ensuring **one person -- one vote**.
-\An **Admin Panel** is provided to manage candidates, view voting statistics, and monitor the election process.
+An **Admin Panel** is provided to manage candidates, view voting statistics, and monitor the election process.
 
 The system focuses on: - Simplicity - Data integrity - Secure vote submission - Clean and responsive UI
 
@@ -154,13 +154,13 @@ This project was created to: - Understand real-world web application flow - Prac
 ## ⚠️ Disclaimer
 
 This project is developed **for academic and learning purposes only**.
-\It is not intended for use in real elections without advanced security and compliance measures.
+It is not intended for use in real elections without advanced security and compliance measures.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 👩‍💻 Author
 
-**Sahaduna Thahreen**\
+**Sahaduna Thahreen**
 Bsc Computer Science Graduate
 
 Passionate about building practical web applications and learning new technologies.
