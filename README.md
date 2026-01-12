@@ -117,8 +117,8 @@ Follow the steps below to run the **Online Voting System** on your local machine
 
 ## 🔐 Admin Login (Demo)
 
--   **Username:** admin\
--   **Password:** admin
+-   **Username:** admin
+-   **Password:** _admin
 
 ⚠️ These credentials should be changed for security purposes.
 
