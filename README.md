@@ -51,20 +51,21 @@ The system focuses on: - Simplicity - Data integrity - Secure vote submission - 
 
 ## 📂 Project Structure
 
-online-voting-system/ 
-│
-├── index.html \# Main landing page
-├── admin.html \# Admin login page
-├── cpanel.php \# Admin control panel 
-├── nomination.html \# Candidate nomination list 
-├── vault.html \# Voting interface 
-├── saveVote.php \# Vote submission logic 
-├── updatePwd.php \# Admin password update 
-|
-├── css/ \# Stylesheets 
-├── js/ \# JavaScript files 
-├── images/ \# Images and icons 
-└── README.md
+```text
+online-voting-system/
+├── index.html          # Main landing page
+├── admin.html          # Admin login page
+├── cpanel.php          # Admin control panel
+├── nomination.html     # Candidate nomination list
+├── vault.html          # Voting interface
+├── saveVote.php        # Vote submission logic
+├── updatePwd.php       # Admin password update
+├── css/                # Stylesheets
+├── js/                 # JavaScript files
+├── images/             # Images and icons
+└── README.md           # Project documentation
+```
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
