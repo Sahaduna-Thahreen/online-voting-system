@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eVoting | Online Voting System</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Ubuntu|Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto Condensed', sans-serif;
+      margin: 0;
+      background-color: #f2f5f7;
+    }
+
+    /* Navbar */
+    .navbar-inverse {
+      background-color: #0072ff;
+      border: none;
+      padding: 15px 20px;
+    }
+    .navbar-inverse .navbar-brand {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 28px;
+      color: #fff;
+      font-weight: bold;
+    }
+    .navbar-inverse .navbar-nav li a {
+      color: #fff !important;
+      font-weight: 500;
+      padding: 15px 20px;
+    }
+    .navbar-inverse .navbar-nav li a:hover {
+      color: #ffd700 !important;
+    }
+    .navbar-inverse .btn {
+      border-radius: 25px;
+      padding: 8px 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .navbar-inverse .btn:hover {
+      background-color: #005bb5;
+      color: #fff;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: #fff;
+      padding: 0 20px;
+    }
+    .hero img {
+      width: 200px;
+      margin-bottom: 30px;
+      animation: bounce 2s infinite;
+    }
+    .hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 60px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
+    .hero .btn-cta {
+      font-size: 22px;
+      border-radius: 30px;
+      padding: 12px 40px;
+      transition: 0.3s;
+    }
+    .hero .btn-cta:hover {
+      background-color: #005bb5;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-15px);}
+      60% {transform: translateY(-7px);}
+    }
+
+    /* Features Section */
+    .features {
+      padding: 80px 20px;
+      background-color: #f8f9fa;
+      text-align: center;
+    }
+    .features h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 42px;
+      margin-bottom: 20px;
+      color: #0072ff;
+    }
+    .features p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 50px;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 40px 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      margin-bottom: 30px;
+    }
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+    .feature-card img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+    .feature-card h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 24px;
+      color: #0072ff;
+      margin-bottom: 10px;
+    }
+    .feature-card p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Feedback Section */
+    .feedback {
+      padding: 80px 20px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      text-align: center;
+      color: #fff;
+    }
+    .feedback h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+    .feedback p {
+      font-size: 18px;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer h3 {
+      font-family: 'Oswald', sans-serif;
+      margin-bottom: 10px;
+    }
+    footer img {
+      margin: 0 10px;
+      width: 50px;
+      height: 50px;
+      transition: 0.3s;
+    }
+    footer img:hover {
+      transform: scale(1.2);
+    }
+
+    /* Responsive */
+    @media(max-width: 768px){
+      .hero h1 { font-size: 36px; }
+      .hero p { font-size: 18px; }
+      .features h2, .feedback h2 { font-size: 32px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="border-radius:0;">
+  <div class="container-fluid"><!-- Use container-fluid for full width -->
+    <div class="navbar-header">
+<a href="index.html" class="navbar-brand">eVoting</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+      <a href="admin.html" class="btn btn-success navbar-right navbar-btn">Admin Panel</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero" style="text-align: center; padding: 200px 20px 100px 20px; background: linear-gradient(to right, #ede7f6, #e3f2fd);">
+  
+  <!-- Bigger Vote Logo -->
+  <img src="images/Vote logo.png" alt="Vote Logo" style="width: 350px; max-width: 90%; height: auto; margin-bottom: 30px;">
+
+  <h1 style="font-family: 'Oswald', sans-serif; font-size: 60px; font-weight: bold; color: #000; margin-bottom: 20px;">
+    ONLINE VOTING SYSTEM
+  </h1>
+
+  <p style="font-family: 'Roboto Condensed', sans-serif; font-size: 24px; font-weight: bold; margin-bottom: 30px; color: #444;">
+    Safe • Reliable • Secure • Fast
+  </p>
+
+  <a href="vault.html" class="btn btn-primary btn-lg btn-cta" style="font-size: 22px; padding: 15px 30px; border-radius: 30px;">
+    <span class="glyphicon glyphicon-tag"></span> Cast Your Vote
+  </a>
+</section>
+
+
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2>SMART VOTING PLATFORM</h2>
+    <p>Empowering voters through technology-driven elections.</p>
+    <div class="row">
+  <div class="col-md-4">
+    <div class="feature-card text-center" style="padding:20px;">
+      <img src="images/Verification.png" alt="" style="width: 150px; height: auto; margin-bottom: 20px;">
+      <h3>EASY ONLINE VOTING</h3>
+      <p>Vote securely online using your verified personal details.</p>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <a href="nomination.html" style="text-decoration: none;">
+      <div class="feature-card text-center" style="padding:20px;">
+        <img src="images/Nominee.jpg" alt="" style="width: 150px; height: auto; margin-bottom: 20px;">
+        <h3>CANDIDATE NOMINATIONS</h3>
+        <p>View and control the list of candidates registered for the election.</p>
+      </div>
+    </a>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="feature-card text-center" style="padding:20px;">
+      <img src="images/Statistics.jpg" alt="" style="width: 150px; height: auto; margin-bottom: 20px;">
+      <h3>VOTING STATISTICS</h3>
+      <p>Displays real-time graphical representation of voting results for administrative analysis.</p>
+    </div>
+  </div>
+</div>
+
+
+  </section>
+
+  <!-- Feedback Section -->
+  <section class="feedback" id="feedback">
+    <img src="images/Feedback.jpg" alt="" style="width: 300px; height: auto; margin-bottom: 20px;">
+    <h2>SHARE YOUR THOUGHTS</h2>
+    <p>Help us improve by sharing your ideas, feedback, or concerns about the voting platform.</p>
+    <a class="btn btn-info btn-lg" href="#"><strong>Feedback</strong></a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Sahaduna Thahreen</h3>
+    <div>
+      <a href="#"><img src="images/Facebook.jpg" alt="Facebook"></a>
+      <a href="#"><img src="images/Twitter.jpg" alt="Twitter"></a>
+      <a href="#"><img src="images/GitHub.jpg" alt="GitHub"></a>
+    </div>
+    <p>&copy; 2023 eVoting System</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

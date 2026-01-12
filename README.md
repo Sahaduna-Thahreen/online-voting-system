@@ -1,0 +1,145 @@
+# 🗳️ Online Voting System
+
+A secure, user-friendly **Online Voting System** developed using **PHP and MySQL**, designed to digitize the voting process with accuracy, transparency, and efficiency.
+\This project is built as an **academic and demonstration system**,showcasing full-stack web development skills.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## 📌 Project Overview
+
+The Online Voting System allows voters to cast their votes electronically while ensuring **one person -- one vote**.
+\An **Admin Panel** is provided to manage candidates, view voting statistics, and monitor the election process.
+
+The system focuses on: - Simplicity - Data integrity - Secure vote submission - Clean and responsive UI
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## ✨ Key Features
+
+-   🧑‍💻 **Voter Registration & Validation**
+-   🔒 **One-Time Voting Restriction**
+-   🗳️ **Secure Vote Casting**
+-   👨‍💼 **Admin Panel Access**
+-   📋 **Candidate Nomination List**
+-   📊 **Voting Statistics & Results**
+-   🎨 **Responsive & Modern UI (Bootstrap)**
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+-   HTML5
+-   CSS3
+-   Bootstrap
+-   Google Fonts
+
+### Backend
+
+-   PHP (Core PHP)
+
+### Database
+
+-   MySQL
+
+### Server
+
+-   XAMPP (Apache + MySQL)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## 📂 Project Structure
+
+online-voting-system/ 
+│
+├── index.html \# Main landing page
+├── admin.html \# Admin login page
+├── cpanel.php \# Admin control panel 
+├── nomination.html \# Candidate nomination list 
+├── vault.html \# Voting interface 
+├── saveVote.php \# Vote submission logic 
+├── updatePwd.php \# Admin password update 
+|
+├── css/ \# Stylesheets 
+├── js/ \# JavaScript files 
+├── images/ \# Images and icons 
+└── README.md
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## ⚙️ How to Run the Project (Local Setup)
+
+1.  Install **XAMPP**
+
+2.  Start **Apache** and **MySQL** services
+
+3.  Create a MySQL database named:
+
+        db_evoting
+
+4.  Import the required tables into the database
+
+5.  Copy the project folder to:
+
+        C:\xampp\htdocs\
+
+6.  Open a browser and go to:
+
+        http://localhost/online-voting-system/
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## 🔐 Admin Login (Demo)
+
+-   **Username:** admin\
+-   **Password:** admin
+
+⚠️ These credentials should be changed for security purposes.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## 🧩 How the System Works
+
+-   Voters enter their details and select a candidate
+-   The system verifies whether the voter has already voted
+-   If valid, the vote is stored securely in the database
+-   Duplicate voting is restricted using voter ID validation
+-   Admins can monitor nominations and voting data through the control
+    panel
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## 🎯 Project Objective
+
+This project was created to: - Understand real-world web application flow - Practice PHP--MySQL integration - Learn form validation and database handling - Build a complete end-to-end system
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## 🚀 Future Improvements
+
+-   Password hashing and encryption
+-   OTP or email verification for voters
+-   Advanced result analytics and charts
+-   Improved UI animations
+-   Role-based authentication
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## ⚠️ Disclaimer
+
+This project is developed **for academic and learning purposes only**.
+\It is not intended for use in real elections without advanced security and compliance measures.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## 👩‍💻 Author
+
+**Sahaduna Thahreen**\
+Bsc Computer Science Graduate
+
+Passionate about building practical web applications and learning new technologies.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+⭐ If you find this project helpful, feel free to star the repository!

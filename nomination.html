@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nomination Panel</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Ubuntu|Raleway|Oswald|Roboto+Condensed" rel="stylesheet">
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: #f4f6f9;
+}
+
+/* Fonts */
+.headerFont { font-family: 'Ubuntu', sans-serif; font-size: 24px; }
+.subFont { font-family: 'Raleway', sans-serif; font-size: 14px; }
+.specialHead { font-family: 'Oswald', sans-serif; }
+.normalFont { font-family: 'Roboto Condensed', sans-serif; }
+
+/* Full page content */
+.full-page {
+  min-height: 100vh;
+  padding: 140px 30px 40px;
+}
+
+/* Remove gutter */
+.row.no-gutter {
+  margin: 0;
+}
+
+/* Candidate Card */
+.candidate-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: center;
+  height: 100%;
+}
+
+/* Candidate Image */
+.candidate-card img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* Text sizes */
+.candidate-card h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.candidate-card h5 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.candidate-card ul {
+  font-size: 13px;
+  padding-left: 18px;
+  text-align: left;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR (FROM YOUR FIRST CODE) -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <div class="navbar-header">
+      <a href="cpanel.php" class="navbar-brand headerFont"><strong>eVoting</strong></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="example-nav-collapse">
+      <ul class="nav navbar-nav"></ul>
+
+      <button class="btn btn-success navbar-right navbar-btn">
+        <span class="normalFont"><strong>Admin Panel</strong></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- CONTENT --> 
+<div class="container-fluid full-page">
+ <div class="row no-gutter"> 
+<!-- MODI --> 
+<div class="col-md-3 col-sm-6"> 
+<div class="candidate-card">
+ <img src="images/Modi.jpg"> 
+<h4 class="normalFont">Narendra Modi</h4> 
+<h5 class="normalFont">Prime Minister of India, BJP</h5>
+ <hr> <ul class="normalFont">
+ <li><strong>Born:</strong> Sept 17, 1950</li>
+ <li><strong>Education:</strong> Delhi University</li>
+ <li><strong>Party:</strong> BJP</li> 
+<li><strong>Position:</strong> PM since 2014</li>
+ <li><strong>Key Focus:</strong> Economic reforms & infrastructure development</li>
+ <li><strong>Major Schemes:</strong> Swachh Bharat, Make in India</li>
+ <li><strong>Leadership Style:</strong> Strong central governance</li>
+ <li><strong>International Role:</strong> Strengthened India’s global diplomacy</li>
+ </ul>
+ </div>
+ </div> 
+<!-- RAHUL --> 
+<div class="col-md-3 col-sm-6">
+ <div class="candidate-card"> <img src="images/rahul.jpg">
+ <h4 class="normalFont">Rahul Gandhi</h4> 
+<h5 class="normalFont">Leader, Indian National Congress</h5>
+ <hr> <ul class="normalFont">
+ <li><strong>Born:</strong> June 19, 1970</li>
+ <li><strong>Education:</strong> Cambridge</li>
+ <li><strong>Party:</strong> INC</li> 
+<li><strong>MP:</strong> Since 2004</li>
+ <li><strong>Key Focus:</strong> Social justice & employment</li>
+ <li><strong>Major Interests:</strong> Education reform & youth empowerment</li>
+ <li><strong>Leadership Style:</strong> Democratic and consultative</li>
+ <li><strong>Public Outreach:</strong> Regular interaction with students, farmers, and workers</li>
+ </ul> 
+</div>
+ </div>
+ <!-- KEJRIWAL -->
+ <div class="col-md-3 col-sm-6">
+ <div class="candidate-card">
+ <img src="images/Arvind.jpg"> 
+<h4 class="normalFont">Arvind Kejriwal</h4> 
+<h5 class="normalFont">Chief Minister of Delhi, AAP</h5>
+ <hr> 
+<ul class="normalFont">
+ <li><strong>Born:</strong> Aug 16, 1968</li>
+ <li><strong>Education:</strong> IIT Kharagpur</li> 
+<li><strong>Party:</strong> AAP</li>
+ <li><strong>CM:</strong> Delhi</li> 
+<li><strong>Key Focus:</strong> Transparent governance</li> 
+<li><strong>Major Reforms:</strong> Subsidized electricity and water supply for households</li>
+ <li><strong>Leadership Style:</strong> People-centric administration</li> 
+<li><strong>Public Impact:</strong> Reduced cost of living for middle- and lower-income families</li>
+ </ul>
+ </div>
+ </div> 
+<!-- MAMATA -->
+ <div class="col-md-3 col-sm-6">
+ <div class="candidate-card"> 
+<img src="images/mamata.png"> 
+<h4 class="normalFont">Mamata Banerjee</h4>
+ <h5 class="normalFont">Chief Minister of West Bengal, TMC</h5>
+ <hr> <ul class="normalFont"> <li><strong>Born:</strong> Jan 5, 1955</li>
+ <li><strong>Education:</strong> Calcutta University</li>
+ <li><strong>Party:</strong> TMC</li>
+ <li><strong>CM:</strong> Since 2011</li>
+ <li><strong>Key Focus:</strong> Grassroots development</li>
+ <li><strong>Major Scheme:</strong> Duare Sarkar – doorstep delivery of government services</li>
+ <li><strong>Leadership Style:</strong> Grassroots-oriented leadership</li>
+ <li><strong>Public Impact:</strong> Improved access to welfare schemes for rural and urban citizens</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

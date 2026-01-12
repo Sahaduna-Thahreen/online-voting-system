@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Panel | eVoting</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu|Raleway|Oswald|Roboto+Condensed" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f4f6f9;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .headerFont {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 24px;
+    }
+
+    .specialHead {
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .login-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 40px 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .login-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .form-control {
+      border-radius: 8px;
+    }
+
+    .btn-primary {
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .page-header {
+      margin-top: 0;
+      border-bottom: 2px solid #eee;
+    }
+
+    .navbar-inverse {
+      border-radius: 0;
+      margin-bottom: 0;
+    }
+
+    .login-container {
+      padding-top: 150px;
+      padding-bottom: 50px;
+    }
+
+    #error {
+      color: red;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="index.html" class="navbar-brand headerFont"><strong>eVoting</strong></a>
+    </div>
+    <div class="navbar-right" style="padding:10px;">
+      <button type="button" class="btn btn-success"><strong>Admin Panel</strong></button>
+    </div>
+  </div>
+</nav>
+
+<!-- LOGIN FORM -->
+<div class="container login-container">
+  <div class="row">
+    <div class="col-sm-4 col-xs-12"></div>
+    <div class="col-sm-4 col-xs-12">
+      
+      <div class="login-card">
+        <div class="page-header text-center">
+          <h2 class="specialHead">Admin Authentication</h2>
+          <p class="text-muted normalFont">Sign in to access the dashboard</p>
+        </div>
+
+        <form action="authentication.php" method="POST">
+          <div class="form-group">
+            <label>Username</label>
+            <input type="text" name="adminUserName" placeholder="Enter Admin's Username" class="form-control" required>
+
+            <label>Password</label>
+            <input type="password" name="adminPassword" placeholder="Enter Admin's Password" class="form-control" required>
+
+            <button type="submit" class="btn btn-primary btn-block" style="margin-top:20px;">
+              <span class="glyphicon glyphicon-user"></span> Sign In
+            </button>
+
+            <label id="error"></label>
+          </div>
+        </form>
+
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12"></div>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
